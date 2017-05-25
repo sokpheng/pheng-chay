@@ -1,0 +1,42 @@
+/**
+ * Author: Flexitech Cambodia
+ * Date 10 Oct, 2016
+ * Created By: Panhna Seng
+ */
+
+
+//  covert from px to rem
+@function calRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+
+// font size from px to rem
+@mixin fontSize($size) {
+  	font-size: $size; //Fallback in px
+  	font-size: calRem($size);
+}
+
+
+
+// =========================== media query mixin ===============================
+@mixin mediaQueryMax($screen) {
+	@media (max-width: $screen) { @content; }
+}
+
+@mixin mediaQuery($screen) {
+	@media only screen and (max-width: $screen) { @content; }
+}
+
+@mixin mediaQueryHeight($screen) {
+	@media only screen and (max-height: $screen) { @content; }
+}
+
+@mixin mediaQueryMin($screen) {
+	@media only screen and (min-width: $screen) { @content; }
+}
+
+@mixin mediaQueryMinMax($min,$max) {
+	@media only screen and (min-width: $min) and (max-width: $max) { @content; }
+}

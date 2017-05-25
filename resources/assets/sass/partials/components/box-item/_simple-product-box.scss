@@ -1,0 +1,113 @@
+.simple-product-box{
+	.box-item{
+		box-shadow: 0 0 4px rgba(0,0,0,0.2);
+	}
+	.img-container{
+		height: calRem(160px);
+		@extend .bg-cover;
+		background-color: $default_bg_box;
+		overflow: hidden;
+		.coupon{
+		   position: absolute;
+		   top: -9px;
+		   right: 25px;
+		   svg{
+		   	opacity: .95;
+		   	path{
+		   		fill: $primary_col;
+		   	}
+		   }
+		   ._dis_value{
+			   position: absolute;
+			   top: 11px;
+			   right: 6px;
+			   font-size: 22px;
+			   font-weight: bold;
+			   color: white;
+		   }
+		}
+		.coupon-info{
+			position: absolute;
+			bottom: 0;
+			padding: 12px 12px;
+			width: 100%;		
+			background-color: rgba(black,0.3);
+			.expire-on{
+				color: white;
+				margin: 0;
+			}
+			._date{
+		    	font-weight: bold;
+		    	font-size: 1.3rem;
+		    	float: right;
+			}
+		}
+		.coupon-info-v2{
+
+		}
+	}
+	.info{
+    	padding: 5px 10px;
+    	background-color: #fff;
+    	ul{
+    		>li{
+    			height: 25px;
+    		}
+    	}
+    	.terms{
+		    list-style-type: disc;
+		    padding-left: 20px;
+		    font-size: 15px;
+		    margin: 5px 0;
+		    color: initial;
+		    margin-bottom: 10px;
+    		li{
+    			height: auto;
+    		}
+    	}
+    	.expire-date{
+		    color: initial;
+		    padding-top: 8px;
+		    border-top: 1px solid rgba(226, 226, 226, 0.68);
+    	}
+	}
+	.main_title{
+		font-size: 1.1rem;
+		color: $text_black_col; 
+		@extend .text-overflow;
+		// margin-top: 5px;
+	}
+	._cate{
+		color: $sub_title_gray_col;
+		// margin-top: 5px;
+		&.text-overflow{
+			// max-width: 170px;
+			max-width: 100%;
+		}
+	}
+	.price_level{
+		._val{
+			color: $money_col;
+		}
+	}
+	._rate{
+		span{
+			color: $star_col_second;
+			font-size: 20px;
+		}
+	}
+	._features{
+		span{
+			color: $dark_gray;
+		}
+	}
+
+	@include mediaQuery(1200px){
+		.info{
+			.expire-date{
+				font-size: 14px;
+			}
+		}
+	}
+
+}

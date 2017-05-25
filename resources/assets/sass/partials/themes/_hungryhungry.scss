@@ -1,0 +1,143 @@
+// default theme color
+$mainColDrak: #41A291;
+
+$mainCol: #44AD9C;
+ 
+$grayLess: whitesmoke;  
+   
+$blackLess: rgb(84, 84, 84); 
+
+$yellowLess: #FFFACD;   
+
+$col-post-time: #B3B3B3;  
+  
+$in-out-cubies: cubic-bezier(0.65, 0.05, 0.36, 1);  
+
+$gray-back: #EEEEEE;
+
+$border-gray-less: rgba(239, 239, 239, 0.4);
+
+$text-gray-less: rgb(239, 239, 239);
+
+// social
+$col-fb: #365899; // facebook
+
+$col-tw: #55ACEE; // twitter  
+$col-g: red; // google    
+
+$warning_col: #A94242;
+  
+$back-col-cover: gainsboro; 
+
+// // ============== theme for project =============
+
+// layout config
+$max_width_global: 1200px;
+$max_width_menu: $max_width_global;
+$max_width_content: $max_width_global;
+
+// text color
+$menu_footer_col: #373a3c;
+
+// base color
+$primary_col: #d00021;
+$primary_dark: darken($primary_col, 5);
+$primary_darken: darken($primary_col, 10); //20
+$light_col: lighten($primary_col, 10);
+
+$secondary_col: #0074d9; 
+$secondary_dark: darken($secondary_col, 10);
+
+$silver_col: #CCCCCC;
+
+$gray_less_xxs: #f5f5f5;   
+
+$gray_less_xs: #eceeef;
+
+$gray_less: #eee;
+
+$gray_dark: #818a91;
+
+// $green_col: #449d44;	
+$green_col: #009688;
+
+$blue_col: #0074d9;
+
+$gray_dark_level_1: #ddd;
+
+//
+$text_col_primary: white;
+
+$text_black_col: rgba(black, .8);
+
+$text_black_col_2: #373a3c;
+
+// carousel
+// --arrow
+$nav_arrow_col: white;
+$nav_arrow_col_hover: $primary_dark;
+
+// menu
+$bg_nav_bar: rgba(white, .95);
+$menu_text_col: $silver_col;
+$menu_text_col_hover: lighten($silver_col, 10); //darken($menu_text_col, 10);
+$menu_text_active_col: darken($menu_text_col, 10);
+$menu_back_col: white; 
+
+// button
+// -- call to action
+$call_to_action_primary: $primary_col;
+$call_to_action_primary_hover: $primary_dark;
+$call_to_action_secondary: $secondary_col;
+$call_to_action_secondary_hover: $secondary_dark;
+$call_to_action_border: white;
+
+// dropdown
+$defaul_dropdown_bg: #eceeef;
+
+// box item
+$default_bg_box: #eee;
+ 
+// line
+$hr_col: #e8e8e8;
+
+// section 
+$section_bg_gray: #eee;
+
+// tag
+// -- a tag
+$default_a_tag: darken(white, 10);
+$default_a_tag_hover: white;
+
+//
+$money_col: #ec971f;
+
+$star_col: #ecf121;
+$star_col_second: #c9302c;
+
+$dark_gray: #818a91;
+
+// button
+$btn_border_outline_radius: 0;
+$btn_active_bg: $green_col;
+
+// title color
+$sub_title_gray_col: #9a9a9a;
+
+//login
+$bg-login-frm: #eee;
+$flat_form_control_border: #ccc;
+
+// tags
+$tag_default_bg: white;
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+.simple-list-with-text{
+	ul{
+		li{
+			margin-right: 15px;
+		}
+	}
+} 
+
+.list-group{
+	&.list-features{
+		.list-group-container{
+			padding: 15px 0;
+		}
+		.list-group-item{
+			padding: 12px 15px;
+		   border-radius: 0;
+		   border: none;
+		   background-color: transparent;
+			&.active{
+				background-color: white;
+			   color: $primary_col;
+			   border-bottom: 1px solid $gray_less;
+			}
+		} 
+	}
+	&.filter-link{
+		background-color: white;
+		&.box-shadow{
+			box-shadow: 0 0 8px rgba(black, .15);
+		}
+		._main_title{
+			font-size: 1.6rem;
+		}
+		.list-group-container{
+			padding: 15px 0;
+			&.gray-style{
+				background-color: $gray_less;
+			}
+		}
+		.list-group-item{
+			padding: 8px 15px;
+		   border-radius: 0;
+		   border: none;
+		   background-color: transparent;
+			&.active{
+				background-color: $primary_col;
+			   color: white;
+			   border-bottom: 1px solid $gray_less;
+		    	min-height: 50px;
+		    	padding: 10px 15px;
+			}
+		}
+		._sub_title{
+			color: $primary_col;
+			font-size: 1.1rem;
+		}
+		.tag-default{
+			background-color: $gray_less;
+   	 	color: $primary_col;
+    		font-size: 90%;
+		}
+		.sub-list-group{
+			padding: 20px 0;
+			.list-group-container{
+				padding-top: 0;
+			}
+			.custom-control{
+				margin-bottom: 0;
+			}
+		}
+
+		@include mediaQuery(1023px){
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  z-index: 100;
+		  width: 100%;
+		  height: 100vh;
+		  overflow: auto;
+		  display: none;
+		  &.active-filter{
+		  	display: block;
+		  }
+		}
+
+	}
+	.right-icon{
+			font-size: 22px;
+			color: $green_col
+	}
+}

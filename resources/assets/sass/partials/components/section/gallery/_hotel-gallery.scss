@@ -1,0 +1,50 @@
+.hotel-gallery{
+	&.three-element{
+		.main-element{
+			background-color: $gray_less_xs;
+			min-height: 353px;
+			.desc{
+				@extend .center-absolute;
+				top: inherit;
+				padding: 10px 15px;
+				background-color: rgba(black, .3);
+				color: white;
+			}
+		}
+		.other-element{
+		    flex-direction: column;
+		    height: 100%;
+		}
+		.all-gallery{  
+			position: relative;
+			width: 100%;
+			height: 50%;
+			img{
+				width: 100%;
+			}
+			.see-all-image{
+				height: 25px;
+			    text-align: center;
+			    color: white;
+			}
+		}
+		.map{
+			width: 100%;
+			height: 50%;
+			background-color: $gray_less_xs;
+		}
+
+		@include mediaQuery(767px){
+			.main-element{
+				min-height: 200px;
+			}
+			.other-element{
+				min-height: 200px;
+				flex-direction: row;
+				.all-gallery, .map{
+					height: 100%;
+				} 
+			}
+		}
+	}
+}

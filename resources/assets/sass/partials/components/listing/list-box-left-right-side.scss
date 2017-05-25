@@ -1,0 +1,73 @@
+._you-might-also-like{
+	background-color: $gray_less;
+	._title{
+	    font-size: 1.4rem;
+	    color: $primary_col;
+	    padding: 15px;
+	    border-bottom: 1px solid $gray_dark_level_1;
+	    margin: 0;
+	}
+	.list-item{
+		padding: 15px;
+		border-bottom: 1px solid $gray_dark_level_1;
+		// background-image: url('/img/comp/restaurant-logo.png');
+		&.no-border{
+			border: none;
+		}
+		.media{
+			word-break: break-word;
+		}
+		.media-heading{
+			font-size: 1.1rem;
+		}
+		.feature, .address{
+			font-size: 0.8rem;
+		}
+		._price{
+			margin-left: 10px;
+			color: $money_col;
+		}
+		&.on-map-page{
+			position: relative;
+			padding-left: 40px;
+			._item_number{
+				@extend .center-absolute;
+				background-color: $gray_less;
+			   	background-color: #eee;
+			   	width: 25px;
+			   	height: 20px;
+			   	font-size: 14px;
+			   	text-align: center;
+			   	right: inherit;
+			}
+		}
+		&.active{ 
+			background-color: $gray_less_xxs;
+			._item_number{
+				color: white;
+				background-color: $primary_col;
+			}
+		} 
+	}
+	.list-container{
+		.list-item{
+			&:last-child{
+				border: none;
+			}
+		}
+	}
+	.media-left{
+		$size: 70px;
+		$sizeLg: 150px;
+		width: $size;
+	   	height: $size;
+	   	padding: 0;
+	   	margin-right: 10px;
+	   	background-color: $gray_dark_level_1;
+	   	border: 1px solid $gray_dark_level_1;
+	   	&.size-lg{
+			width: $sizeLg;
+		   	height: $sizeLg;
+	   	}
+	}
+}

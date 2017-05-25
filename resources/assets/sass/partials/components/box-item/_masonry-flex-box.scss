@@ -1,0 +1,35 @@
+.masonry-box{
+	margin: 0 -10px;
+	img{
+		width: 100%;
+		transition: .8s opacity;
+	}
+
+	//
+	/* fluid 5 columns */
+	.grid-sizer,
+	.grid-item { 
+		width: 25%; 
+	}
+	/* 2 columns */
+	.grid-item--width2 {
+		width: 50%; 
+	}
+
+	.img-container{
+		margin: 10px;
+		position: relative;
+	}
+
+	.info{
+		.overlay-bg{
+			padding: 15px;
+			background-color: rgba(black, .25);
+		    bottom: 0;
+		    height: inherit;
+		    top: inherit;
+		    margin: 0;
+		    color: white;
+		}
+	}
+}  

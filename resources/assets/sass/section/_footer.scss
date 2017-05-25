@@ -1,0 +1,124 @@
+#footer{
+	// padding-top: 50px;
+	background-color: white;
+	@extend .max-container-center;
+	.content-info{ 
+		padding: 30px 0px 50px 0;
+	} 
+	&.footer-news{
+		padding-top: 30px;
+	}
+	.logo{
+		max-width: 80px;
+	}
+	.menu-list{
+		padding-bottom: 30px; 
+		ul{
+			@extend .clearUL;
+			>li{
+				display: inline-block;
+				margin-bottom: 5px;
+				>a{
+					padding: 5px 10px;
+					color: white;
+					display: block;
+					&:hover{
+						background-color: $mainColDrak;   
+					}
+				}
+				&.active{
+					background-color: $mainColDrak;
+				}
+			}
+		}
+	}
+	.social-list{
+		@extend .clearUL;
+		text-align: center;
+		>li{
+			display: inline-block;
+			>a{
+				display: block;
+				padding: 5px;
+				font-size: 20px;
+				margin: 0 10px;
+				height: 40px;
+				width: 40px; 
+				background-color: $mainCol;
+				@include transition(background-color .3s ease);
+				&:hover{
+					background-color: $mainColDrak;   
+				}
+				>span{
+					position: relative; 
+					top: 3px;
+					color: white;
+				} 
+			}
+		}
+	}
+	.section-container{
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		.power-by,a{
+			color: $primary_col;
+			&:hover{
+				color: $primary_dark;
+			}
+		}
+	}
+	.scrollTop{
+		@extend .center-absolute;
+		display: block;
+		width: 80px;
+		height: 80px;
+		background-color: $mainColDrak;
+	    border-radius: 50%;
+	    top: inherit; 
+	    bottom: -55px;
+	    text-align: center;
+	    [class^="icon-"]{
+	    	display: block;
+	    	position: relative;
+	    	top: 2px;
+	    	color: rgba(white, .75);
+	    	font-size: 25px;
+	    	@include transform(rotate(180deg));
+	    }
+	    &:hover{
+	    	box-shadow: 0 0 6px rgba(255, 255, 251, 0.5);
+	    	[class^="icon-"]{
+	    		color: white;
+	    	}
+	    }
+	}
+	.icon-social-facebook{
+		font-size: 22px;
+	}
+	.copy-right{
+		text-align: center;
+	  	padding: 20px 0px 15px 0px;
+	  	background-color: $mainColDrak;
+	  	font-size: 16px; 
+	 	color: white;
+	 	a{
+	 		color: white;
+	 		display: inline-block;
+	 		position: relative;
+	 		hr{
+	 			width: 100%;
+	 			margin: 0;
+	 			position: absolute;
+	 			left: 0;
+	 			bottom: 0;
+	 			border: 1px dashed rgba(white, .2);
+	 		}
+	 		&:hover{ 
+	 			hr{
+	 				border-color: rgba(white, .7);
+	 			}
+	 		}
+	 	}
+	}
+}

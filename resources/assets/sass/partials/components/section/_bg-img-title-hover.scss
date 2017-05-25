@@ -1,0 +1,17 @@
+.bg-img-title-hover{
+	position: relative;
+	._title-container{
+		max-width: 600px;
+		margin: 0 auto;
+		position: relative;
+		margin-bottom: 100px;
+	}
+	&._md-height{ 
+		height: 450px; 
+	}
+	._title{
+		padding: 10px 10px;
+		// border-bottom: 2px solid white;
+		color: white;
+	}
+} 

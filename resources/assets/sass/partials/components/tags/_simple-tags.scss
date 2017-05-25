@@ -1,0 +1,49 @@
+.simple-tag{
+	padding: 20px 15px;
+	padding-bottom: 10px;
+	// ._title{
+	// 	margin-right: 20px;
+	// }
+	li{
+		margin-right: 2px;
+	}
+	.tag{
+		padding: 6px 14px;
+		background-color: $tag_default_bg;
+		color: $primary_col;
+		&._border{
+			border: 1px solid $gray_dark_level_1;
+		}
+	}
+}
+
+
+.favorite-tag{
+	li{
+		display: inline-block;
+		padding: 5px 4px;
+		&.active{
+			.tag{
+				background-color: $primary_col;
+				color: white;
+			}
+		}
+	}
+	.tag{
+		border-radius: 100px;
+		padding: 8px 15px;
+		background-color: $gray_dark_level_1;
+		border: none;
+		color: $text_black_col_2;
+		font-size: 95%;
+		transition: background-color .2s ease-in-out;
+		&.primary-tag{
+			background-color: white;
+			color: $primary_col;
+			&:hover{
+				background-color: $primary_dark;
+				color: white;
+			}
+		}
+	}
+}

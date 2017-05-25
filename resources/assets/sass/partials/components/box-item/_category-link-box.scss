@@ -1,0 +1,28 @@
+.category-link-box{
+	margin-top: 20px;
+	.cate-title{
+		._text{
+			font-size: calRem(20px);
+			// color: $primary_col;
+		}
+		&.border-bottom{
+	    	display: inline-block;
+	    	border-bottom: 2px solid $primary_col;
+	    	padding-bottom: 2px;
+	    	margin-bottom: 10px;
+		}
+	}
+	.sub-cate{
+		a{
+			color: black;
+    		font-size: 17px;
+    		margin-right: 5px; 
+		}
+	}
+	.cate-relate{
+		    margin-top: 5px;
+		a{
+    		color: #55595c;
+		}
+	}
+}

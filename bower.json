@@ -1,0 +1,77 @@
+{
+  "name": "cocms",
+  "version": "0.0.1",
+  "authors": [
+    "npsopheak <npsopheak@gmail.com>"
+  ],
+  "description": "CoCMS",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "coding",
+    "cms"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vide": "~0.4.1",
+    "scrollreveal": "~3.0.6",
+    "angular-drag-and-drop-lists": "~1.2.0",
+    "angular-google-maps": "^2.4.0",
+    "angular-material": "~1.1.1",
+    "angular-resource": "~1.4.1",
+    "angular-route": "~1.4.1",
+    "angular-sanitize": "~1.4.1",
+    "bootstrap-datepicker": "~1.4.1",
+    "dynamics.js": "~0.0.8",
+    "gsap": "~1.17.0",
+    "imagesloaded": "^4.1.1",
+    "jquery": "~2.1.4",
+    "layzr.js": "~1.4.3",
+    "lory": "~1.1.1",
+    "magnific-popup": "~1.0.0",
+    "minigrid": "~1.6.5",
+    "moment": "~2.10.3",
+    "ng-file-upload": "^12.2.13",
+    "ng-file-upload-shim": "~5.0.9",
+    "particles.js": "~2.0.0",
+    "progressbar.js": "~0.8.1",
+    "underscore": "~1.8.3",
+    "photoswipe": "~4.1.1",
+    "bootstrap": "v4.0.0-alpha.5",
+    "slick-carousel": "^1.5.9",
+    "bootstrap-hover-dropdown": "^2.2.1",
+    "angular-material-data-table": "^0.10.9",
+    "flickity": "^2.0.5",
+    "flickity-bg-lazyload": "^1.0.0",
+    "angular-facebook": "^0.2.3",
+    "material-angular-paging": "*",
+    "ngmap": "^1.17.8",
+    "lodash": "^4.17.2",
+    "angular-contenteditable": "^0.3.8",
+    "vegas": "^2.3.1",
+    "angular-animate": "1.5.6",
+    "angular-material-datetimepicker": "^1.4.0",
+    "xregexp": "^3.1.1",
+    "nanoscroller": "^0.8.7",
+    "sticky-kit": "^1.1.2",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.45",
+    "salvattore": "^1.0.9",
+    "isotope": "^3.0.2",
+    "jQuery-ui-Slider-Pips": "jquery-ui-slider-pips#^1.11.4",
+    "angular-aria": "1.5.6",
+    "angular-messages": "1.5.6",
+    "datamaps": "^0.5.8"
+  },
+  "resolutions": {
+    "angular": "^1.5.6",
+    "bootstrap": "v4.0.0-alpha.5"
+  }
+}

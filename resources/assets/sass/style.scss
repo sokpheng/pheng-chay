@@ -1,0 +1,137 @@
+// // lib
+// // @import "modules/bourbon/bourbon";
+// @import "modules/flexi-mixin";
+// // @import "icomoon";  
+
+// // extend 
+// @import "partials/themes/cambodroom";  
+// @import "partials/extends/all";
+// @import "partials/utilities/utility"; 
+// // @import "partials/components/all";
+ 
+// //  ================ component ================ 
+
+// // mock-up
+// @import "partials/components/mock-up/list-mock-up";
+
+// // typography
+// @import "partials/components/typography/text-content";
+
+// // effect  
+// @import "partials/components/effect/simple-hover";
+// @import "partials/components/effect/magnific-popup/fade_animate";
+
+// // menu
+// @import "partials/components/nav-bar/simple-nav-bar";
+// @import "partials/components/dropdown-menu/simple-dropdown-menu"; 
+// @import "partials/components/menu/menu-with-border-bottom";    
+
+// //box item
+// @import "partials/components/box-item/masonry-flex-box"; 
+// @import "partials/components/box-item/simple-box";  
+// // @import "partials/components/box-item/info-hover-bottom-box"; 
+// // @import "partials/components/box-item/simple-product-box"; 
+// // @import "partials/components/box-item/category-link-box"; 
+// // @import "partials/components/box-item/restaurant-info-box"; 
+// // @import "partials/components/box-item/empty-msg-box"; 
+
+// // button
+// @import "partials/components/button/simple-button"; 
+
+// // slider
+// @import "partials/components/slider/flat-slider"; 
+
+// // tag
+// @import "partials/components/tags/simple-tags"; 
+
+// // table
+// @import "partials/components/table/table-multi-body"; 
+
+// // tab
+// // @import "partials/components/tab/tab-default"; 
+// // @import "partials/components/tab/tab-reviews"; 
+
+// // carousel
+// // @import "partials/components/carousel/gallery-group-cell";   
+
+// // login
+// // @import "partials/components/login/login-with-image-left"; 
+
+// // panel  
+// // @import "partials/components/panel/simple-panel";
+
+// // side-bar
+// // @import "partials/components/side-bar/side-bar-fixed-full-height";
+ 
+// // profile
+// // @import "partials/components/profile/profile-with-menu-tab";
+
+// // image 
+// // @import "partials/components/listing/simple-image-list"; 
+
+// // listing
+// @import "partials/components/listing/simple-list"; 
+// @import "partials/components/listing/list-box-left-right-side"; 
+// // @import "partials/components/listing/simple-image-list";   
+  
+// // feature
+// @import "partials/components/section/simple-section-box-item";  
+
+// // breadcrumbs
+// @import "partials/components/breadcrumbs/multi-step-indicator"; 
+
+// // footer 
+// @import "partials/components/footer/simple-footer";
+
+// // form
+// @import "partials/components/form/flat-design";
+// @import "partials/components/form/feedback-form";
+
+// // social
+// @import "partials/components/social/simple-follow-us";
+
+// // subscription
+// @import "partials/components/subscription/simple-newseltter";
+
+// // popup
+// @import "partials/components/magnific-popup/default";
+
+// // map
+// // @import "partials/components/map/map-window-info";
+
+// // section   
+// // @import "partials/components/section/map/map-search-section";
+// // @import "partials/components/section/bg-img-title-hover";
+// // @import "partials/components/section/simple-app-section";
+// @import "partials/components/section/gallery/hotel-gallery";      
+
+// // other   
+// @import "partials/components/other/scroll-up-bt";
+
+
+// // for project 
+// @import "themes/main";
+// // @import "partials/components/section/verticle-menu-border-bottom";
+// // @import "section/header"; 
+// // @import "section/footer";  
+// // @import "section/misc";
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "myfile/home";
+
+@import "innovation/innovation";
+
+@import "myfile/table";
+
+@import "myfile/select";
+
+@import "map/map";  
+

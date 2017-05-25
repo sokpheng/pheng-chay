@@ -1,0 +1,25 @@
+.md-menu-list-item{
+	margin-left: 16px;
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+
+md-fab-speed-dial{
+	position: fixed;
+	right: 35px;
+	bottom: 35px;
+	md-icon[md-font-icon]{
+		line-height: 1.7;
+	 	width: auto;
+	}
+
+	.md-fab-action-item{
+		md-icon{
+			color: gray !important;
+		}
+	}
+}

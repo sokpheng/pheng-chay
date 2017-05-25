@@ -1,0 +1,26 @@
+.simple-panel{
+	box-shadow: 0 0 4px #ccc;
+	.panel-title{
+		padding: 8px 15px;
+    	border-bottom: 1px solid #ddd;
+    	background-color: #ddd;
+    	font-size: 18px;
+    	&.bg-primary{
+    		background-color: $primary_col;
+    		color: $text_col_primary;
+    	}
+	}
+	.panel-content{
+		padding: 15px;
+	}
+	.panel-footer{
+		padding: 6px 15px;
+		background: #e8e8e8;
+	}
+	.link-list{
+		a{
+			margin-right: 5px;
+			color: black;
+		}
+	}
+}

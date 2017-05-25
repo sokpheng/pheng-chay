@@ -1,0 +1,69 @@
+.md-cus-table{
+	width: 100%;
+	table{
+		width: 100%;
+		border: 1px solid $table-border-color;
+		td, th{
+			border: 1px solid $table-border-color;
+			padding: 10px;
+		}
+		th{
+			background-color: $table-background-color;	
+			color: $reversed-font-color;
+			text-align: left;
+		}
+
+		td{
+			transition: background-color .3s ease-in-out;
+			font-size: $font-table-col-small;
+			md-menu{
+				display: inline-block;
+				position: relative;
+				top: 0px;
+				transform: inherit;
+				// float: right;
+				padding: 0px;
+				margin-left: 0px;
+			}
+
+			.extra-option{
+				transition: border .3s ease-in-out;
+				display: inline-block;
+				padding: 0px 10px;
+				background-color: #FAFBFD;
+				border: 1px solid #C1C9F4;
+				padding-top: 0px;
+				padding-bottom: 5px;
+				font-size: 12px;
+
+				&:hover
+				{
+					border: 1px solid #90A0F7;					
+				}
+
+				&.active{
+					background-color: rgb(63,81,181);
+					border: 1px solid rgb(63,81,181);
+					color: white
+				}
+			}
+
+			.td-badge{
+				color: gray;
+				margin-top: 10px;
+				display: inline-block;
+				[class^="icon-"]{
+					position: relative;
+  					top: 2px;
+				}
+			}
+		}
+
+		tr:hover{
+			td{
+				background-color: $table-background-color; 
+				cursor: pointer;
+			}
+		}
+	}
+}

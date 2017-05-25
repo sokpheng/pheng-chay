@@ -1,0 +1,21 @@
+// Namespace: md/material design
+// ... cus/customized
+.md-cus-panel{
+	border: 1px solid $panel-border-color;
+	// Header
+	.md-cus-header{
+		height: 30px;
+		line-height: 30px;
+		padding: $medium-padding;
+		border-bottom: 1px solid $panel-border-color;
+		font-size: $font-header-small;
+		background-color: #F7F7F7;
+		color: $reversed-font-color;
+		font-weight: bold;
+	}
+	// Content
+	.md-cus-content{
+		padding: $medium-padding;
+		min-height: 200px;
+	}
+}

@@ -1,0 +1,16 @@
+.dropdown-menu{
+   border: none;
+   background-color: $bg_dropdown_menu;
+   border-radius: 0;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14);
+	&.account-dropwown{
+	   // top: 125%;
+	   top: 120%;
+	   // top: 108%;	
+	   // top: 133%;	 
+	   min-width: 13rem;
+	   .dropdown-item{
+	   	padding: 6px 1.5rem;
+	   }
+	}
+} 

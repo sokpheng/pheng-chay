@@ -1,0 +1,140 @@
+.restaurant-info-box{
+	position: relative;
+	background-color: $gray_less;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	.basic-info{
+		padding: 30px 25px;
+		background-color: white;
+		.media-left{
+			$size: 100px;
+			width: $size;
+			height: $size;
+			padding: 0;
+		   margin-right: 20px;
+		   background-color: $gray_dark_level_1; 
+		   // border-radius: 28px;
+		}
+	}
+	.restaurant-menu-bar{  
+		padding: 0 25px;
+		background: $gray_dark_level_1;
+	}
+	.rating-option{
+		li{
+			margin-left: 15px;
+		}
+		.tag.rate-result{  
+		    background-color: $green_col;
+		    font-size: 100%;
+		    border-radius: 100px;
+		    padding: 0.5rem 1rem;
+		    text-align: center;
+		   &.size-md{
+		   	min-width: 80px;
+		   	padding: 0.6rem 1rem;
+		   }
+		}
+		.max-rate-num{
+		    position: relative;
+		    top: -5px;
+		    left: 5px; 
+		    font-size: 60%;
+		}
+		.rate_count{
+			line-height: 15px;
+		}
+		.btn-like{
+			padding-right: 0;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+		[class^="icon-"]{
+			color: $gray_dark;
+			font-size: 1.5rem;
+		    position: relative;
+		    top: 2px;
+			&:hover{
+				color: $primary_col;
+			}
+		}
+	}
+
+	@include mediaQuery(767px){
+		margin-top: 70px;
+
+		.rating-option{
+			li{
+				margin-left: 5px;
+			}
+		}
+
+		.restaurant-menu-bar{
+			.display-flex{
+				display: block;
+			}
+			padding: 0;
+			.nav-pills{
+				display: flex;
+				align-items: flex-end;
+			}
+		}
+
+		.tab-reviews{
+			padding: 0;
+			.review-item{
+				margin: 0 !important;
+			}
+		}
+		.tab-content{
+			padding: 0;
+			.review-list{
+				padding: 0;
+			}
+		}
+		.media{
+			display: block;
+		}
+		.media-left{
+			margin: auto !important;
+		}
+		.media-body{
+			margin-top: 15px;
+		}
+		.option{
+			margin-top: 15px;
+			text-align: center;
+			.btn,.rating-option{
+				display: inline-block;
+				vertical-align: top;
+				margin-bottom: 15px;
+			}
+		}
+
+	}
+
+}
+
+.more-about-restaurant{
+	background-color: $gray_less;
+	border: 1px solid $gray_less;
+	._map{  
+		height: 180px; 
+		.angular-google-map-container { 
+		  height: 180px; 
+		}
+		background-color: $gray_dark_level_1;
+	}
+	._address{
+		padding: 15px;
+		._title{
+			[class^="icon-"]{
+				color: $primary_col;
+			    position: relative;
+			    left: -3px
+			}
+		}
+	}
+}

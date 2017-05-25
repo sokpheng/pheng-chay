@@ -1,0 +1,17 @@
+.img-max-width{
+	img{
+		max-width: 100%;
+	}
+}
+
+.bg-cover{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	&.button-center{
+		background-position: bottom center;
+	}
+	&.top-center{
+		background-position: top center;
+	}
+}

@@ -1,0 +1,35 @@
+.info-hover-bottom-box{
+   white-space: nowrap;
+   overflow-x: hidden;
+	.box-item{
+		@extend .bg-cover;
+		position: relative;
+    	max-width: 100%;
+    	height: calRem(200px);
+        margin-bottom: 15px;
+    	.info{
+		    width: 100%;
+		    padding: 3px 10px;
+		    background: rgba(0,0,0,0.45);
+		    position: relative;
+    	} 
+    	.main_title{
+    		color: white;
+    		font-size: calRem(18px);
+    	} 
+    	.sub_title{ 
+    		color: rgba(white, 0.88);
+    		display: inline-block;
+    		font-size: calRem(15px);
+    	}
+    	._rate{
+    		float: right;
+    		span{
+    			color: $star_col;
+    		}
+    	}
+        @include mediaQuery(767px){
+            // margin-bottom: 15px;
+        }
+	}
+}

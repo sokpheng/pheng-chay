@@ -1,0 +1,76 @@
+// Namespace: md/material design
+// ... cus/customized
+.md-cus-draggable-list{
+	border: 1px solid $panel-border-color;
+	$height: 55px;
+	width: 100%;
+	li{
+		display: block;
+		background-color: white;
+		line-height: $height;
+		height: $height;
+		position: relative;
+		cursor: pointer;
+		&:not(:last-child){
+			border-bottom: 1px solid $panel-border-color;
+		}
+
+		.handle{
+			width: 30px;
+			height: 100%;
+			text-align: center;
+			line-height: $height;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			display: inline-block;
+			cursor: move;
+			[class^="icon-"], [class*=" icon-"]{
+				top: 2px;
+  				position: relative;
+  				color: rgb(215, 215, 215);
+			}
+		}
+		label{
+			padding: $medium-padding;
+			padding-left: 30px;
+			font-size: $font-item-small;
+		}
+
+		&.selected {
+		    background-color: #dff0d8;
+		    color: #3c763d;
+		}
+	}
+	.dndPlaceholder {
+	    display: block;
+	    background-color: #ddd;
+	    min-height: 42px;
+	}
+	.dndDraggingSource {
+	    display: none;
+	}	
+}
+
+ul[dnd-list], ul[dnd-list] > li { 
+    position: relative;
+}
+
+.md-cus-chain-menu{
+	color: gray;
+  	font-weight: normal;
+  	.linker{
+
+  		&:hover{
+  			color: $reversed-font-color;
+  			cursor: pointer;
+
+  		}
+  	}
+}
+
+.md-cus-linker{
+	&:hover{
+		cursor: pointer;
+	}
+}

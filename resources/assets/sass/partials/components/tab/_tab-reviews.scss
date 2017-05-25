@@ -1,0 +1,108 @@
+.tab-reviews{
+	.header{
+		padding: 0px 20px;
+		._title{
+			font-size: 1.6rem;
+			padding: 15px 0;
+			margin: 0;
+		}
+		[class^="icon-"]{
+			color: $primary_col;
+			margin-right: 10px;
+			vertical-align: top;
+			display: inline-block;
+		}
+		&.border-bottom ._title{
+			border-bottom: 1px solid $gray_dark_level_1;
+		}
+	}
+	.white-border{
+		height: 20px;
+		background-color: white;
+	}
+	.comment-form-control{
+		padding: 15px 20px;
+		.user-profile-img{
+			margin-right: 15px;
+		}
+		.form-control{
+		   height: 42px;
+		   background: transparent;
+		   border: none;
+		   position: relative;
+		   top: 4px;
+		}
+		.upload-img{
+			padding: 10px 15px;
+	    	height: 45px;
+	    	._val{
+	    		display: inline-block;
+	    		vertical-align: top;
+	    		color: $primary_col;
+	    	}
+	    	[class^="icon-"]{
+	    		font-size: calRem(25px);
+	    		color: $gray_dark;
+	    	}
+	    	&.has-image{
+	    		[class^="icon-"]{
+	    			color: $primary_col;
+	    		}
+	    	}
+	    	&:hover{
+	    		cursor: pointer;
+		    	[class^="icon-"]{
+		    		color: $primary_col;
+		    	}
+	    	}
+		}
+		.comment-editor{
+	    	min-height: 45px;
+	    	padding: 10px 0;
+	    	outline: none !important;
+
+    		padding-right: 170px;
+		    max-width: 100%;
+		    padding-left: 60px;
+		    // padding-top: 0;
+
+		}
+		.post-action{
+		    position: absolute;
+		    right: 20px;
+		    top: 15px;
+		    button{
+				display: inline-block;
+				vertical-align: middle;
+		    }
+		}
+		.btn{
+	    	min-width: 100px;
+	    	border-radius: 0;
+	    	height: 45px;
+	    	font-size: calRem(17px);
+		}
+		@include mediaQuery(767px){
+			.btn{
+				min-width: 80px;
+			}
+		}
+	}
+	.review-list{
+		padding: 10px 20px;
+	}
+	.review-item{
+		// margin-top: 30px;
+		.media-object{
+			$size: 60px;
+			padding: 0;
+			margin-right: 10px;
+			width: 60px;
+			height: 60px;
+			border-radius: 100px;
+		}
+		[class*="col-"]{
+			padding: 0 5px !important;
+		}
+	}
+}

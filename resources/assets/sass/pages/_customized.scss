@@ -1,0 +1,26 @@
+
+// Dialog 
+
+md-dialog md-dialog-content{
+	padding: 10px;	
+}
+ 
+
+.toolbar-selected-item{
+	.md-toolbar-tools{
+		padding: 0 24px;
+		height: auto;
+		> .title {
+			padding: 16px 0px;
+    		font-size: 13px;
+		}
+		> .buttons {
+			line-height: 44px;
+			button{
+				md-icon{
+					color: white;	
+				}
+			}
+		}
+	}
+}

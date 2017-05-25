@@ -1,0 +1,46 @@
+.table-multi-body{
+
+	thead{
+		th{
+			padding: 1rem 1.2rem;
+		}
+	}
+
+	tr{
+		&.size-md td{
+			padding: 5px 0;
+			background-color: white;
+			border: none;
+		}
+		&.size-sm td{
+			padding: 3px 0;
+			background-color: white;
+			border: none;
+		}
+	}
+
+	&.rooms-table{
+		tbody{
+			&.bg-gray{
+				background-color: $gray_less_xxs;
+			}
+		}
+		.info{
+			td{
+				vertical-align: middle;
+				border: 1px solid #e8e8e8;
+				border-bottom: none;
+				&:first-child{
+					border-left: none;
+				}
+				&:last-child{
+					border-right: none;
+				}
+			}
+		}
+		.hotel-title{
+			background-color: $gray_less_xs;
+		}
+	}
+
+}

@@ -1,0 +1,38 @@
+#page-login{
+	md-content{
+
+	 	width: 350px;
+		background-color: transparent;
+
+	}
+
+	button{
+		color: white;
+		font-weight: bold;
+		width: 100%;
+	}
+	
+	background-color: white;
+	padding: 10px 10px;
+
+	.logo-container{
+		text-align: center; 
+		margin-top: 10px;
+	}
+
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.12);
+    border-radius: 10px;
+
+}
+
+.login-area{
+	.login-title{
+		font-size: 18px;
+	    font-weight: bold;
+	    color: gray;
+	}
+	.login-subtitle{
+		font-size: 14px;
+	    color: gray;
+	}
+}

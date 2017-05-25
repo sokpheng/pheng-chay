@@ -1,0 +1,123 @@
+.map-search-section{
+	position: relative;
+	padding-top: 20px;
+	.map-search-section-container{
+		// background-image: url('../img/map-header-landing.jpg');
+		background-color: $gray_dark_level_1;
+		height: 450px;
+		@extend .bg-cover;
+		position: relative;
+		overflow: hidden;
+		.display-flex{
+			height: 100%;
+			color: white;
+		}
+		.slowgan{
+			position: relative;
+			padding: 20px;
+			max-width: 900px;
+			margin: 0 auto;
+		}
+		.main-title{
+			margin-bottom: 2rem;
+		}
+	}
+
+	.radius-box-search-container{
+		// position: absolute;
+		// top: -30px;
+		width: 100%;
+		z-index: 2px;
+		left: 0;
+		form{
+			padding: 0 15px;
+		}
+		.form-group{
+			max-width: 750px;
+			margin: auto;
+			position: relative;
+		}
+		.form-control{
+			border-radius: 100px;
+			height: 60px;
+	    	padding: 10px 20px;
+			box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    		border: none;
+		}
+		.bt-radius-search-option{
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			min-width: 180px;
+			background-color: $primary_col;
+			border-radius: 100px;
+			// padding: 10px 20px;
+		}
+		[class^="icon-"]{
+			color: white;
+			font-size: 22px;
+		    position: relative;
+    		top: 2px;
+		}
+		._text{
+			color: white;
+			font-size: 18px;
+		}
+	   .seperate{
+	   	height: 20px;
+	   	width: 1px;
+	   	background-color: rgba(255, 255, 255, 0.3);
+		   display: inline-block;
+		   vertical-align: middle;
+	   }
+		a, button{
+			background-color: transparent;
+			border: none;
+		   padding: 16px 25px;
+		   display: inline-block;
+		   vertical-align: middle;
+		   text-align: center;
+		   &:hover{
+		   	cursor: pointer;
+		   }
+		}
+	} 
+
+	@include mediaQuery(1024px){
+		// padding-top: 40px;
+	}
+	@include mediaQuery(1023px){
+		// padding-top: 0px;
+	}
+
+	@include mediaQuery(767px){
+		padding-top: 20px !important;
+		.slowgan{
+			max-width: 100%;
+		}
+		.form-control{
+			height: 45px !important;
+			padding: 10px 20px !important;
+		}
+		.radius-box-search-container{
+			button, a{
+				padding: 10px 15px;
+			}
+		}
+	}
+
+	@include mediaQuery(450px){
+		.bt-radius-search-option{
+			min-width: auto !important; 
+			button, a{
+				padding: 7px 15px !important;
+    			font-size: 20px !important;
+			}
+			._text{
+				display: none;
+			}
+		}
+	}
+
+}

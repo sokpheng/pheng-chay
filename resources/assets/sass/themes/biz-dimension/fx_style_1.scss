@@ -1,0 +1,19 @@
+// menu
+.header-section{
+	background-image: url('../img/bg/home-background.jpg');
+	@extend .bg-cover;
+	@extend .bg-cover.button-center;
+} 
+
+.our-product{
+	position: relative;
+	background-image: url('../img/bg/home-hero-man-tablet.jpg');
+	@extend .bg-cover;
+	@extend .bg-cover.top-center;
+	.title{
+		color: white
+	}
+	.sub-title{
+		color: rgba(white, .5);
+	}
+} 

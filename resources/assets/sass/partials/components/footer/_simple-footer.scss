@@ -1,0 +1,120 @@
+.simple-footer{
+	&.bg-primary{
+		background-color: $primary_col;
+	}
+	&.border-top{
+		border-top: 4px solid $primary_col;
+	}
+	.dev_link{
+		color: white;
+    	border-bottom: 1px dashed white;
+    	text-decoration: none !important;
+	}
+	.copy-right{
+		padding: calRem(20px);
+	   background-color: $primary_col;
+	   color: white;
+	   text-align: center;
+	   ._text{
+	   	margin: 0;
+	   }
+	}	
+ 
+	.desc-company{
+		margin-top: calRem(10px);
+	}
+  
+	.footer-menu{
+		padding: calRem(50px) 0;
+		&.padd-sm{
+			padding: 2rem 0;
+		}
+		h5{
+			margin-bottom: 1rem;
+		}
+		ul{
+			padding: 0;
+			list-style-type: none;
+			li{
+
+			}  
+		}
+		.menu_list{
+			li{
+				margin-bottom: 8px;
+			}
+			a{
+				color: $menu_footer_col;
+				text-decoration: none !important;
+			}
+		}
+
+		&.simple-menu{
+			a{
+				color: $menu_footer_col;
+				&:hover{
+					color: $menu_footer_col_hover;
+				}
+			}
+			li a{
+				display: inline-block;
+				padding: 0 10px;
+				font-size: 1.3rem;
+			}
+		}
+
+		@include mediaQuery(767px){
+			padding: calRem(30px) 0;
+		}
+
+	}
+
+	._social{
+		padding-top: calRem(5px);
+		[class^="icon"]{
+	    	font-size: calRem(20px);
+	    	margin-right: calRem(5px);
+	    	// color: $primary_col;
+    	}
+	}
+	._email{
+		margin-top: calRem(5px);
+	}
+	._lang{
+		margin-top: calRem(10px);
+		img{
+			margin-right: 5px;
+		}
+	}
+	.dropdown-toggle{
+		border-radius: 0;
+		padding: calRem(6px) calRem(15px);
+    	width: 140px;
+    	text-align: left;
+    	&::after{
+	    	float: right;
+	    	position: relative;
+	    	top: 10px;
+    	}
+    	@include mediaQuery(1023px){
+    		width: 120px;
+    	}
+	}
+
+	.dropdown-menu{
+		min-width: 100%;
+		padding: 0;
+		margin: 0;
+		background-color: $defaul_dropdown_bg;
+	}
+
+	.dropdown-item{
+		padding: 4px 1rem;
+		._text{
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+
+}

@@ -1,0 +1,116 @@
+.btn-primary--fx{
+	padding: 8px 20px;
+	background-color: $primary_col;
+	min-width: 150px;   
+	color: white;
+	font-size: 16px;
+	position: relative;
+	&.fb-style{
+	    border-radius: 100px;
+	    position: relative;
+	    background-color: $col-fb;   
+	    border: none;
+	    min-width: 280px;
+	    font-size: 1.3rem;
+	    padding: 12px 25px;
+	    margin-top: 300px;
+	}
+	._loading-icon{
+		opacity: 0;
+		&.size-sm{
+			max-width: 20px;
+		}
+	}
+	&.btn-loading{
+		&::after{
+			opacity: 0;
+		}
+		._loading-icon{
+			opacity: 1;
+		}
+		._text{
+			opacity: 0; 
+		}
+	}
+	&.full-radius{
+		border-radius: 100px;
+	}
+	&:hover{
+		color: white;
+		background-color: $primary_dark;
+	}
+}
+
+.btn-outline-primary{
+	border-radius: $btn_border_outline_radius; 
+}
+
+.btn-bigger{
+   min-width: 180px;
+   padding: 10px 20px;
+}
+
+.btn{
+	&.full-radius{
+		border-radius: 100px;
+	}
+	&.no-border{
+		border: none; 
+	}
+	&.btn-primary-dark{
+		background-color: $primary_dark;
+	}
+	&.gray-style{
+		background-color: darken($gray_dark_level_1, 5);
+		&:hover{
+			background-color: darken($gray_dark_level_1, 10);
+		}
+	}
+	&.size-md{
+		min-width: 150px;
+	}
+	&.size-sm{
+		min-width: 120px;
+	}
+	&.fb-style{
+	    border-radius: 100px;
+	    position: relative;
+	    background-color: $col-fb;   
+	    border: none;
+	    min-width: 280px;
+	    font-size: 1.3rem;
+	    padding: 12px 25px;
+	    &.md-size{
+	    	min-width: 220px;
+	    	font-size: 1.1rem;
+	    	padding: 10px 20px;
+	    }
+	}
+	&.icon_inside{
+		[class^="icon-"]{
+			margin-right: 5px;
+		}
+	}
+	&.btn-toggle{
+		&.active{
+			background-color: $btn_active_bg;
+		}
+	}
+}
+
+.bt-clear-style{
+	background-color: transparent;
+	border: none;
+	&.btn-like{
+		&.active{
+			[class^="icon-"]{
+				color: $primary_col;
+			}
+		}
+	}
+}
+
+
+.btn-upload-profile-photo{
+	
+}

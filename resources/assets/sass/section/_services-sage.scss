@@ -1,0 +1,85 @@
+
+// Service section
+#services{
+	background-color: inherit;
+	font-size: 14px;
+	> div{
+		padding-top: 35px;
+		padding: 0px 0px;
+		padding-bottom: 35px;
+	}
+	// .text-headline, .text-paragraph{
+	// 	color: #ccc;
+	// }
+	.text-headline{
+		margin-bottom: 20px;
+		margin-top: 0px;
+	}
+	.text-paragraph{
+		display: block;
+		margin-bottom: 45px;
+	}
+
+	.service-listing-items{
+
+		list-style-type: none;
+	    margin: 0px;
+	    padding: 0px;
+	    display: block;
+	    white-space: nowrap;
+	    text-align: center;
+
+	    li{
+	    	display: inline-block;
+	    	width: 20%;
+	    	padding: 15px 0px;
+	    	text-align: center;
+
+	    	.image, .desc{
+	    		display: block;
+	    		text-align: center;
+	    	}
+	    	.image{
+	    		cursor: pointer;
+	    		svg{
+	    			transition: fill 0.4s ease-in;
+	    			fill: #9C9C9C;
+				    width: 50px;
+				    height: 50px;
+				    margin-top: 15px;
+				    margin-bottom: 15px;
+	    			path{
+	    				transition: fill 0.4s ease-in;
+	    				fill: #9C9C9C !important;
+	    			}
+	    		}
+
+	    		
+	    	}
+	    	.desc{
+	    		color: #ddd;
+	    	}
+
+    		&:hover{
+				.image{
+		    		svg{
+		    			fill: #ddd;
+		    			path{
+		    				fill: #ddd !important;
+		    			}
+		    		}	    			
+		    	}
+    		}
+
+	    }
+		@include mediaQuery(460px){
+
+	    	white-space: inherit;
+    		li{
+    			width: 50%;
+    			float: left;
+    		}
+
+		}
+	}
+}

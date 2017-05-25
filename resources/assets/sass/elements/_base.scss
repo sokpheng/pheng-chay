@@ -1,0 +1,47 @@
+// padding
+$small-padding: 5px;
+$medium-padding: 8px;
+$large-padding: 12px;
+
+// element coloring
+$panel-border-color: #eee;
+$layout-background-color: rgb(0,150,136); //teal //rgb(63,81,181);
+$reversed-font-color: $layout-background-color;
+$main-color: rgb(50, 171, 153);
+$dark-main-color: rgb(16, 92, 81);
+$icon-contact-color: #cf741c;
+
+$table-border-color: $panel-border-color;
+$table-background-color: #F7F7F7;
+
+// font-size: 
+$font-header-small: 14px;
+$font-item-small: 12px;
+$font-table-col-small: 13px;
+
+$grayLessCustomize: #ccc;
+$orangeDark: orange;
+$orange: orange;
+// helper class
+.text-center{
+	text-align: center !important;
+}
+
+table{
+	width: 100%;
+}
+table.table-grid{
+	th, td{
+		border-bottom: 1px solid gray;
+		padding: 5px;
+	}
+	tr:last-child{
+		td, th{
+			border-bottom: 0px solid gray;
+		}
+	}
+}
+
+*{
+	box-sizing: border-box;
+}

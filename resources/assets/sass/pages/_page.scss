@@ -1,0 +1,34 @@
+#page-page{
+	md-list{
+		md-list-item{
+
+			.md-list-item-text{
+				transition: background-color 0.3s ease-in-out;
+				position: relative;
+				padding-left: 10px;
+				padding-right: 70px;
+
+				&:hover{
+					background-color: whitesmoke;
+				}
+
+				h4{
+					padding-top: 5px;
+					padding-bottom: 5px; 
+					line-height: 1.7;
+					[class^="icon-"], [class*=" icon-"] {
+						color: $reversed-font-color;
+						margin-right: 10px;
+					}
+				}	
+				p{
+					font-style: italic;
+  					font-size: 12px;
+				}
+				md-divider{
+					border-color: #ECECEC;
+				}
+			}			
+		}
+	}
+}

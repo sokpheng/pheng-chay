@@ -1,0 +1,39 @@
+.gallery-group-cell{
+	// background-color: $gray_dark_level_1;
+	padding: 0px 25px;
+	min-height: 200px;
+	max-height: 290px;
+	.carousel {
+	  // background: #EEE;
+		white-space: nowrap;
+	    overflow: hidden;
+	}
+	.carousel-cell {
+	  // width: 28%;
+	  display: inline-block;
+	  width: 230px;
+	  height: 250px;
+	  margin: 20px 10px;
+	  // background: #8C8;
+	  // border-radius: 5px;
+	  // counter-increment: carousel-cell;
+	  background-color: $gray_dark_level_1;
+  		background-position: center center;
+  		background-size: cover;
+	}
+
+	.carousel-cell.is-selected {
+	  // background: #ED2;
+	}
+
+	/* cell number */
+	.carousel-cell:before {
+	  display: block;
+	  text-align: center;
+	  // content: counter(carousel-cell);
+	  line-height: 200px;
+	  font-size: 80px;
+	  color: white;
+	}
+
+}

@@ -1,0 +1,18 @@
+@import "modules/bourbon/bourbon";
+@import "modules/pass-lib";
+
+@import "partials/themes/biz-dimension";
+@import "partials/extends/all";
+@import "partials/utilities/utility";
+
+// menu
+@import "partials/components/button/call-to-action";
+@import "partials/components/form/flat-design";
+@import "partials/components/section/feature/biz-features";
+@import "partials/components/carousel/simple-text-hover-owlcarousel";
+
+@import "section/main";
+@import "section/footer-sage";
+@import "section/services-sage";
+
+@import "themes/biz-dimension/sage_style";  

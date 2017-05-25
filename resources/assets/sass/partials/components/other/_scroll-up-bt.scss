@@ -1,0 +1,28 @@
+
+.scroll-top{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 20px; 
+    padding: 0px 5px;
+    background-color: $primary_col;
+    border-radius: 50%;
+    z-index: 1000;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    transform-origin: center center;
+    >span{
+        font-size: 20px; 
+        position: relative;
+        top: 9px;
+        left: 5px;
+        color: white;
+    }
+    &:hover{  
+        background-color: white;
+        span{
+            color: $primary_col;
+        }
+    }
+}

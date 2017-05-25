@@ -1,0 +1,40 @@
+.tag{
+	// padding: 5px;
+	min-width: 40px;
+	background-color: #ECC42D;
+	color: white;
+	font-size: 12px;
+	// margin-left: 10px;
+	
+	margin-left: 0px;
+	margin-right: 10px;
+	border-radius: 15px;
+	padding: 5px 10px;
+
+	&.tag-small{
+		border-radius: 3px;
+		padding: 5px 5px;
+		font-size: 10px; 
+	}
+
+	&.tag-square{
+		border-radius: 1px;
+	}
+
+	&.tag-success{
+		background-color: #44AD9C;
+	}
+
+	&.tag-medium{
+		padding: 5px 7px;
+		font-size: 14px;
+		margin-right: 2px;
+		margin-left: 5px;
+		background-color: #A5A4A4;
+		border-radius: 10px;
+
+		&:first-child{
+			margin-left: 0px;
+		}
+	}
+}

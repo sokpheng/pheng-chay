@@ -1,0 +1,29 @@
+.feedback-frm-container{
+	max-width: 850px;
+	margin: auto;
+	.emojicon-feeling{
+		._title{
+			font-size: 1.1rem;
+		}
+	}
+	.feeling-list{
+		text-align: center;
+		$size: 65px;
+		li{
+			width: $size;
+			height: $size;
+			border-radius: 100px;
+			padding: 13px;
+			background-color: $gray_less;
+			margin: 10px;
+			&:hover{
+				cursor: pointer;
+				background-color: darken($gray_less, 5);
+			}
+			span{
+				font-size: 1.5rem;
+				color: $primary_col;
+			}
+		}
+	}
+}

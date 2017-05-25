@@ -1,0 +1,9 @@
+/vendor
+vendor
+/node_modules
+.env
+/public/vendors
+/public/js/env.js
+worker.log
+/.sass-cache
+**/*.DS_Store

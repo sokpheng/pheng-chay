@@ -1,0 +1,37 @@
+.opacity-hover{
+	// opacity: 1;
+	transition: opacity .3s ease;
+	&:hover{
+		opacity: .9;
+	}
+}
+
+.shadow-hover{
+	box-shadow: 0 0 4px rgba(black, 0); 
+	transition: box-shadow .3s ease;
+	&:hover{
+		box-shadow: 0 0 4px rgba(black, .4);
+	} 
+}
+
+
+.link-black-hover{
+	transition: color .2s ease;
+	&:hover{
+		color: black !important;
+	} 
+}
+
+.link-gray-hover{
+	transition: color .2s ease;
+	&:hover{
+		color: $text_black_col !important;
+	} 
+}
+
+.link-primary-dark-col-hover{
+	transition: color .2s ease;
+	&:hover{
+		color: $primary_dark !important;
+	} 
+}

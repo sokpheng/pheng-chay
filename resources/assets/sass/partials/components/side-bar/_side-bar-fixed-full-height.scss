@@ -1,0 +1,31 @@
+.side-bar-fixed-full-height{
+	position: fixed;
+	top: 0;
+    width: 600px;
+    height: 100vh;
+    padding-top: 72px;
+    // overflow-y: auto;
+    max-height: 100%;
+    z-index: 1;
+    background: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+   .side-bar-fixed-container{
+     	overflow-y: auto;
+     	height: 100%;
+   }
+	&.left-side{
+		left: 0;
+	}
+	&.right-side{
+		right: 0;
+	}
+
+	&.opacity-bg{
+		background-color: rgba(white, .93);
+	}
+
+  @include mediaQuery(767px){
+    width: 100%;
+  }
+
+}

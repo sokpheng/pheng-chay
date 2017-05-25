@@ -1,0 +1,163 @@
+// Page section style
+#page-posts, .data-content{
+	md-list{
+
+
+		md-list-item{
+
+			&:not(:last-child){
+
+				//.md-list-item-text{
+				border-bottom: 1px solid gainsboro;
+				//}
+			}
+		
+			&.hoverable{
+					
+				&:hover{
+					background-color: whitesmoke;
+				}
+			}
+
+			.md-list-item-text{
+
+				transition: background-color 0.3s ease-in-out;
+				position: relative;
+				
+
+				.head{
+					font-size: 14px;
+					padding: 5px;
+				}
+				.col{
+
+					padding: 5px;
+					font-size: 14px;
+					color: rgba(0,0,0,0.54);
+
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+
+					p{
+						letter-spacing: 0px;
+						line-height: normal;
+						font-weight: normal;
+
+					}
+				}
+				h4{
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					padding-top: 5px;
+					padding-bottom: 5px; 
+				}	
+			}			
+		}
+	}
+}
+
+$formWidth: 800px;
+
+#page-create-post{
+	form{
+		width: $formWidth;
+  		margin: auto;
+
+	}
+}
+
+form{
+	.textarea-group{
+		margin-top: 25px;
+		padding: 4px;
+		.label-container{
+			color: gray;
+			display: block;
+			margin-bottom: 15px;
+		}
+		#cke_post-editor{
+			// margin-top: 15px;
+		}
+	}
+	.custom-field-value{
+		position: relative;		
+		.remove-field{
+			transition: transform 0.3s ease-out, color 0.3s ease-out, opacity 0.3s ease;
+			position: absolute;
+			top: 25px;
+			left: -25px;
+			height: 20px;
+			font-size: 20px;
+  			line-height: 1;
+			color: #DDDDDD;
+			cursor: pointer;
+			transform: translateX(30px);
+			opacity: 0;
+			&:hover{
+				color: gray;
+			}
+		}
+		&:hover{
+			.remove-field{
+				transform: translateX(0px);
+				opacity: 1;
+			}
+		}
+	}
+	.custom-field{		
+		margin-top: 15px;
+		padding: 4px;
+		position: relative;
+		.add-field{
+			transition: transform 0.3s ease-out, color 0.3s ease-out;
+			position: absolute;
+			top: 6px;
+			left: -25px;
+			height: 20px;
+			font-size: 20px;
+  			line-height: 1;
+			color: rgb(179, 179, 179);
+			transform: rotateZ(45deg);
+			cursor: pointer;
+			&:hover{
+				color: gray;
+			}
+			&.selected{
+				color: gray;
+				transform: rotateZ(90deg);
+			}
+		}
+		.custom-options{
+			span{
+				color: gray;
+				font-size: 12px;
+				display: inline-block;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+			input.field-name-holder{
+				border: 0px;
+				border-bottom: 1px solid rgb(232, 232, 232);
+				font-size: 13px;
+				width: 100%;
+				padding: 5px 2px;
+			}
+		}
+	}
+}
+
+.suggestion-filter{
+	.helper{
+		font-size: 12px;
+	}
+	md-radio-group{
+		background-color: #FFF4E0;
+		display: block;
+		md-radio-button{
+			display: inline-block;
+			font-size: 14px;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+<!-- 	<li ng-if="::boundaryLinks" ng-class="{disabled: noPrevious()||ngDisabled}" class="pagination-first"><a href ng-click="selectPage(1, $event)" ng-disabled="noPrevious()||ngDisabled" uib-tabindex-toggle>{{::getText('first')}}</a></li>
+
+	<li ng-if="::directionLinks" ng-class="{disabled: noPrevious()||ngDisabled}" class="pagination-prev"><a href ng-click="selectPage(page - 1, $event)" ng-disabled="noPrevious()||ngDisabled" uib-tabindex-toggle>{{::getText('previous')}}</a></li>
+
+	<li ng-repeat="page in pages track by $index" ng-class="{active: page.active,disabled: ngDisabled&&!page.active}" class="pagination-page"><a href ng-click="selectPage(page.number, $event)" ng-disabled="ngDisabled&&!page.active" uib-tabindex-toggle>{{page.text}}</a></li>
+
+	<li ng-if="::directionLinks" ng-class="{disabled: noNext()||ngDisabled}" class="pagination-next"><a href ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle>{{::getText('next')}}</a></li>
+
+	<li ng-if="::boundaryLinks" ng-class="{disabled: noNext()||ngDisabled}" class="pagination-last"><a href ng-click="selectPage(totalPages, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle>{{::getText('last')}}</a></li> -->
+
+
+	<nav aria-label="..." class="text-xs-center">
+	  	<ul class="pagination">
+
+	    <li ng-if="::directionLinks" ng-class="{disabled: noPrevious()||ngDisabled}" class="page-item disabled">
+	      <a class="page-link" href ng-click="selectPage(page - 1, $event)" ng-disabled="noPrevious()||ngDisabled" uib-tabindex-toggle tabindex="-1" aria-label="Previous" >
+	        <span class="sr-only" aria-hidden="true1">&laquo;</span>
+	        <span class="sr-only1">{{::getText('previous')}}</span>
+	      </a>
+	    </li>
+
+	    <li ng-repeat="page in pages track by $index" ng-class="{active: page.active,disabled: ngDisabled&&!page.active}" class="page-item"><a class="page-link" href ng-click="selectPage(page.number, $event)" ng-disabled="ngDisabled&&!page.active" uib-tabindex-toggle>{{page.text}}</a></li>
+
+	    <li ng-if="::directionLinks" ng-class="{disabled: noNext()||ngDisabled}" class="page-item">
+	      <a class="page-link" href ng-click="selectPage(page + 1, $event)" ng-disabled="noNext()||ngDisabled" uib-tabindex-toggle aria-label="Next">
+	        <span class="sr-only" aria-hidden="true">&raquo;</span>
+	        <span class="sr-only1">{{::getText('next')}}</span>
+	      </a>
+	    </li>
+
+	  	</ul>
+	</nav>

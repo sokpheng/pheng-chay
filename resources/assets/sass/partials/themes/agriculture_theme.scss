@@ -1,0 +1,57 @@
+$mainColDrak: #41A291;
+
+$mainCol: #44AD9C;
+
+$grayLess: whitesmoke; 
+
+$blackLess: rgb(84, 84, 84);
+
+$yellowLess: #FFFACD;
+
+$col-post-time: #B3B3B3;
+ 
+$in-out-cubies: cubic-bezier(0.65, 0.05, 0.36, 1);
+
+$gray-back: #EEEEEE;
+
+$border-gray-less: rgba(239, 239, 239, 0.4);
+
+$text-gray-less: rgb(239, 239, 239);
+
+// social
+$col-fb: #428bca; // facebook
+
+$col-tw: #55ACEE; // twitter
+$col-g: red; // google
+
+$warning_col: #A94242;
+ 
+$back-col-cover: gainsboro;
+
+// ============== for theme =============
+
+// layout config
+$max_width_global: 1000px;
+$max_width_menu: $max_width_global;
+$max_width_content: $max_width_global;
+
+// base color
+// $primary_col: rgb(97, 156, 127);
+// 
+$primary_col: #24A54E;
+
+$light_col: rgb(161, 232, 95);
+
+// $primary_col: white;
+// 
+$primary_dark: darken($primary_col, 10);
+
+
+// menu color
+$menu_text_col: $primary_col;
+$menu_text_col_hover: $primary_dark; //darken($menu_text_col, 10);
+$menu_text_active_col: darken($menu_text_col, 10);
+// $menu_back_col: rgba(white, .8); 
+// 
+$menu_back_col: white; 
+

@@ -1,0 +1,36 @@
+.simple-image-list{
+	padding: 0px 20px 20px 20px;
+	.image-item{
+		margin-top: 20px;
+		height: 220px;
+    	&:hover{
+    		.image-info{
+    			&.show-on-hover{
+    				bottom: 0;
+    				opacity: 1;
+    			}
+    		}
+    	}
+	}
+	.image-info{
+		padding: 8px 10px;
+    	background: rgba(0,0,0,0.4);
+		.name, ._post-time{
+			color: white;
+		}
+		&.show-on-hover{
+			position: relative;
+	    	bottom: -64px;
+	    	opacity: .0;
+	    	transition: bottom .2s ease-out, opacity .4s ease-out;
+		}
+	}
+	@include mediaQuery(767px){
+		.image-info{
+			&.show-on-hover{
+		    	bottom: 0px;
+		    	opacity: 1;
+			}
+		}
+	}
+}

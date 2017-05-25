@@ -1,0 +1,104 @@
+#map-window-info{
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 20px;
+    img{
+    	max-width: 100%;
+    }
+    @include mediaQuery(767px){
+    	img{
+    		max-width: 100px;
+    	}
+    	.main-title{
+    		font-size: 14px;
+    	}
+    } 
+}
+
+.simple-place-info-box{
+    >img{
+        // margin: 10px !important;
+        position: absolute !important;
+        right: 10px;
+    }
+    // .info-box{
+        width: 330px !important;
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.18);
+    // }
+    &:after{  
+
+        content: '';  
+        position: absolute;
+        border-style: solid;
+        
+        border-color: white transparent;
+        display: block;
+        width: 0;
+        z-index: 1;
+
+        // for top arrow
+        // border-width: 0 15px 15px;
+        // top: -15px;                   
+        // left: 50%;
+
+        // bottom arrow
+        border-width: 20px 15px 0;
+        bottom: -20px;                   
+        left: 50%;
+
+        transform: translateX(-50%);
+
+    }
+    &:before{  
+
+        content: '';  
+        position: absolute;
+        border-style: solid;
+        
+        border-color: #e0e0e0 transparent;
+        display: block;
+        width: 0;
+        z-index: 1;
+
+        // for top arrow
+        // border-width: 0 15px 15px;
+        // top: -15px;                   
+        // left: 50%;
+
+        // bottom arrow
+        border-width: 22px 17px 0;
+        bottom: -22px;                   
+        left: 50%;
+
+        transform: translateX(-50%);
+
+    }
+    .media-object{
+        max-width: 65px;
+    }
+    .media-left{
+        background-color: $gray_dark_level_1;
+        padding: 0;
+        margin-right: 10px;
+        height: 65px;
+        width: 65px;
+        // background-image: url('/img/comp/restaurant-logo.png');
+        // @extend .bg-normal;
+    }
+    .near_by_val{
+        font-size: .8rem;
+    }
+    .text-overflow{
+        max-width: 210px;
+    }
+    .near_by_val{
+        color: $blue_col;
+    }
+    ._desc{
+        max-width: 233px;
+        margin: 0;
+    }
+}

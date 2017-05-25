@@ -1,0 +1,6 @@
+.tab-default{
+	background-color: $gray_less;
+	&.no-bg{
+		background-color: transparent;
+	}
+}

@@ -1,0 +1,65 @@
+// padding
+.no-padd{
+	padding: 0;
+}
+
+.no-padd-b{
+	padding-bottom: 0;
+}
+
+@include mediaQuery(767px){
+    .overflow-hidden-xs{
+        overflow: hidden;
+    }
+} 
+
+// shadow
+// ===================== thumnail shadow ==================
+.thum-shadow-xs { 
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.27);
+}
+
+.thum-shadow-sm {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.27);
+}
+
+.thum-shadow-lg {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.27);
+}
+
+// border-radius
+// ==================== radius style ====================
+.no-radius {
+    border-top-radius : 0px;
+    border-bottom-radius : 0px;
+}
+
+.radius-xs {
+    border-top-radius : 4px;
+    border-bottom-radius : 4px;
+}
+
+.radius-sm {
+    border-top-radius : 6px;
+    border-bottom-radius : 6px;
+}
+
+.radius-lg {
+    border-top-radius : 8px;
+    border-bottom-radius : 8px;
+}
+
+.radius-vl {
+    border-top-radius : 10px;
+    border-bottom-radius : 10px;
+}
+
+.radius-vvl {
+    border-top-radius : 40px;
+    border-bottom-radius : 40px;
+}
+
+.circle-radius {
+    border-top-radius : 50%;
+    border-bottom-radius : 50%;
+}

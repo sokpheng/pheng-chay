@@ -1,0 +1,79 @@
+.profile-with-menu-tab{
+	background-color: $gray_less;
+	padding: 30px;
+	.media-left{
+		padding-right: 20px;
+	}
+	.media-body{
+		max-width: 600px;
+	}
+	.user-profile-img{
+		&._hover{
+			&:hover{
+				opacity: .8;
+			}
+		}
+	}
+	.profile-info{
+		padding-right: 20px;
+		.bt-edit{
+			font-size: calRem(16px);
+			margin-left: 15px;
+			[class^="icon-"]{
+				margin-right: 5px;
+			}
+		}
+		.media-left{
+			overflow: hidden;
+			width: 100px;
+			height: 100px;
+			padding: 0;
+			margin-right: 20px;
+			background-color: $gray_dark_level_1;
+			box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+			img{
+				width: 100px;
+			}
+		}
+	}
+	.activities{
+		li{
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			padding: 10px 20px;
+			._count{
+				color: $primary_col;
+				display: block;
+				font-size: 1.5rem;
+				font-weight: bold;
+			}
+			._text{
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	@include mediaQuery(767px){
+		// flex-wrap: row wrap;
+		flex-direction: column;
+		padding: 20px 15px;
+		.profile-info{
+			padding: 0;
+			.media-left{
+				width: 70px;
+				height: 70px;
+				img{
+					width: 70px;
+				}
+			}
+		}
+		.activities{
+			margin: 15px auto auto auto;
+			li{
+				padding: 10px 15px;
+			}
+		}
+	}
+
+}
